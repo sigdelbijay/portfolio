@@ -1,0 +1,59 @@
+@import "./base.scss";
+.skills {
+    position: relative;
+    font-size: 35px;
+    height: 285px;
+    background: $yellow-color;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 2rem;
+    &__header {
+        font-weight: 600;
+    }
+    &__text {
+        position: absolute;
+        white-space: nowrap;
+        font-family: 'Roboto', sans-serif;
+        &--left {
+            left: 0;
+            top: 7rem;
+            animation: moveleft 30s linear;
+            @keyframes moveleft {
+                0% {
+                    transform: translate3d(0,0,0)
+                }
+                100% {
+                    transform: translate3d(-50%, 0, 0)
+                }
+            }
+        }
+        &--right {
+            right: 0;
+            top: 12rem;
+            animation: moveright 30s linear;
+            @keyframes moveright {
+                0% {
+                    transform: translate3d(0,0,0)
+                }
+                100% {
+                    transform: translate3d(50%, 0, 0)
+                }
+            }
+        }
+    }
+    @media (max-width: 700px) {
+        & {
+            font-size: 25px;
+            height: 200px;
+        }
+        &__text {
+            font-size: 25px;
+            &--left {
+                top: 5rem;
+            }
+            &--right {
+                top: 8rem;
+            }
+        }
+    }
+}

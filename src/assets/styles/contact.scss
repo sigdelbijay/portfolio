@@ -1,0 +1,208 @@
+.contact {
+    position: relative;
+    background: linear-gradient(to right, #f3e5ce, #f4deb7, #f3e4ce);
+    font-family: sans-serif;
+    padding: 2rem 3rem;
+    &__header {
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    // @media (max-width: 1100px) {
+    //     padding: 2rem;
+    // }
+    &__profile {
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 3rem;
+        &-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            img {
+                width: 70px;
+                height: 90px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+        &-col {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font-size: 20px;
+            z-index: 1;
+        }
+        &-bg {
+            position: absolute;
+            width: 180px;
+            height: 90px;
+            background: #f6d5a4;
+            border-radius: 5px;
+            left: 10%;
+        }
+        &-satori {
+            padding-left: 5px;
+            & img {
+                height: 40px;
+                width: 40px;
+            }
+        }
+    }
+    &__socials {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        padding-bottom: 3rem;
+        & {
+           font-size: 25px; 
+        }
+    }
+    &__footer {
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        &-link {
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            @media (max-width: 800px) {
+                font-size: 15px;
+            }
+        }
+    }
+}
+.form {
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 30px;
+        font-weight: 500;
+        input {
+            font-size: inherit;
+            font-weight: inherit;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid #000;
+            color: #444;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    &__flex {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        textarea {
+            width: 70%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #000;
+            font-size: 30px;
+            color: #444;
+            resize: none;
+            &:focus {
+                outline: none;
+            }
+        }
+        .coolButton {
+            font-weight: 900;
+            font-size: 20px;
+            &:before {
+                background: #fff;
+            }
+            &:after {
+                display: none;
+            }
+            &:hover:before{
+                background: #fff;
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .contact__profile {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        &-location {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .form {
+        &__flex {
+            flex-direction: column;
+            align-items: center;
+            textarea {
+                font-size: 25px;
+            }
+        }
+        &__info {
+            font-size: 25px;
+            input {
+                font-size: 25px;
+            }
+        }
+    }
+    .contact .coolButton {
+        transform: scale3d(0.7, 0.7, 0.7);
+        font-size: 23;
+    }
+    .contact__profile {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        &-col {
+            font-size: 20px;
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &-location {
+            display: none;
+        }
+    }
+
+}
+
+@media (max-width: 700px) {
+    .form {
+        &__info {
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: 20px;
+            width: 100%;
+            input {
+                font-size: inherit;
+                width: 100%;
+            }
+        }
+        &__flex {
+            textarea {
+                width: 100%;
+                font-size: 20px;
+            }
+            
+        }
+    }
+    .contact__header {
+        font-size: 25px;   
+    }
+    
+}
