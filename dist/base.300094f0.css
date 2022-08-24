@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@100&family=Roboto:wght@100&display=swap");
+@import url("http://fonts.cdnfonts.com/css/noir-et-blanc");
+@font-face {
+  font-family: "Roboto";
+  src: url("/Roboto-Regular.f2f4e87e.ttf");
+  font-style: normal;
+  font-weight: 200;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+*:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: hidden;
+}
+
+img, video, canvas, svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.section {
+  padding: 1rem;
+  overflow: hidden;
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+@media (min-width: 650px) {
+  .section {
+    padding: 5rem;
+  }
+}
+
+/*# sourceMappingURL=/base.300094f0.css.map */

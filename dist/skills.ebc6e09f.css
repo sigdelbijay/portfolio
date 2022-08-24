@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@100&family=Roboto:wght@100&display=swap");
+@import url("http://fonts.cdnfonts.com/css/noir-et-blanc");
+@font-face {
+  font-family: "Roboto";
+  src: url("/Roboto-Regular.586fc6e6.ttf");
+  font-style: normal;
+  font-weight: 200;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+*:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: hidden;
+}
+
+img, video, canvas, svg {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.section {
+  padding: 1rem;
+  overflow: hidden;
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+@media (min-width: 650px) {
+  .section {
+    padding: 5rem;
+  }
+}
+
+.skills {
+  position: relative;
+  font-size: 35px;
+  height: 285px;
+  background: #fce287;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 2rem;
+}
+.skills__header {
+  font-weight: 600;
+}
+.skills__text {
+  position: absolute;
+  white-space: nowrap;
+  font-family: "Roboto", sans-serif;
+}
+.skills__text--left {
+  left: 0;
+  top: 7rem;
+  animation: moveleft 30s linear;
+}
+@keyframes moveleft {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+.skills__text--right {
+  right: 0;
+  top: 12rem;
+  animation: moveright 30s linear;
+}
+@keyframes moveright {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(50%, 0, 0);
+  }
+}
+@media (max-width: 700px) {
+  .skills {
+    font-size: 25px;
+    height: 200px;
+  }
+  .skills__text {
+    font-size: 25px;
+  }
+  .skills__text--left {
+    top: 5rem;
+  }
+  .skills__text--right {
+    top: 8rem;
+  }
+}
+
+/*# sourceMappingURL=/skills.ebc6e09f.css.map */
