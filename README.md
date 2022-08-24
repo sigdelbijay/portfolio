@@ -1,6 +1,6 @@
 # Portfolio
 
-A simple portfolio application based in Vanilla JavaScript
+A simple portfolio application based in HTML, SCSS and Vanilla JavaScript.
 
 ## Installation
 
